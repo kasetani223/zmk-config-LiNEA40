@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -143,10 +143,10 @@
 
         CONTROL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &kp LS(LG(S))  &kp PAGE_DOWN    &kp UP_ARROW    &kp PG_UP        &kp HOME
-&trans  &trans  &trans  &trans  &trans                    &kp LG(TAB)    &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans  &trans  &trans  &trans  &trans                    &trans         &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &kp LG(R)
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans          &trans           &kp LG(L)
+&kp LC(LG(LEFT_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LS(LG(RIGHT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                   &kp LS(LG(S))        &kp PAGE_DOWN    &kp UP_ARROW    &kp PG_UP        &kp HOME
+&kp LS(LC(TAB))         &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LC(TAB)                                               &kp LG(TAB)          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
+&kp LEFT_SHIFT          &trans                  &kp LC(MINUS)       &kp LC(EQUAL)            &trans                                                    &trans               &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &kp LG(R)
+&kp CAPSLOCK            &trans                  &trans              &kp DELETE               &kp LC(Z)                &kp LC(Y)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                   &trans          &trans           &kp LG(L)
             >;
         };
 
