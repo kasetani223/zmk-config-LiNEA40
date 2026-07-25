@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -143,19 +143,19 @@
 
         CONTROL {
             bindings = <
-&kp LC(LG(LEFT_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LS(LG(RIGHT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                   &kp LS(LG(S))        &kp PAGE_UP      &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME
-&kp TAB                 &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LG(TAB)                                               &kp LG(TAB)          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&kp ESCAPE              &kp LC(MINUS)           &kp LG(D)           &kp LC(EQUAL)            &kp LA(LC(TAB))                                           &trans               &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &kp LG(R)
-&kp CAPSLOCK            &trans                  &trans              &kp DELETE               &kp LC(Z)                &kp LC(Y)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                   &trans          &trans           &kp LG(L)
+&kp LC(LG(LEFT_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LS(LG(RIGHT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                   &kp PAGE_UP          &kp PAGE_DOWN    &kp UP_ARROW    &kp HOME         &kp END
+&kp TAB                 &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LG(TAB)                                               &kp LG(TAB)          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp DELETE
+&kp ESCAPE              &kp LC(MINUS)           &kp LG(D)           &kp LC(EQUAL)            &kp LA(LC(TAB))                                           &kp LS(LG(S))        &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &kp LG(R)
+&kp CAPSLOCK            &trans                  &trans              &trans                   &kp LC(Z)                &kp LC(Y)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                   &trans          &trans           &kp LG(L)
             >;
         };
 
         NUMBER {
             bindings = <
-&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp SLASH  &kp N7        &kp N8        &kp N9        &kp UNDERSCORE
-&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &kp COLON  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
-&kp F11  &kp F12  &trans  &trans  &trans                     &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
-&trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                   &trans        &trans        &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp UNDERSCORE  &kp N7        &kp N8        &kp N9        &kp SLASH
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &kp MINUS       &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp COLON
+&kp F11  &kp F12  &trans  &trans  &trans                     &kp N0          &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                        &trans        &trans        &trans
             >;
         };
 
