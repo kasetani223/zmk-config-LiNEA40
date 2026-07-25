@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -123,10 +123,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R                        &kp T                                           &kp Y        &kp U  &lt 5 I       &kp O              &kp P
-&kp A             &kp S         &kp D         &kp F                        &kp G                                           &kp H        &kp J  &kp K         &kp L              &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                        &lt 4 B                                         &lt 6 N      &kp M  &kp COMMA     &kp DOT            &mt RIGHT_SHIFT SLASH
-&kp TAB           &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL LANGUAGE_1  &lt 2 SPACE  &lt 3 LANGUAGE_2    &kp BACKSPACE  &lt 2 ENTER         &lt 7 DELETE  &kp RIGHT_CONTROL  &kp ESCAPE
+&kp Q             &kp W         &kp E         &kp R                 &kp T                                              &kp Y        &kp U  &lt 5 I       &kp O            &kp P
+&kp A             &kp S         &kp D         &kp F                 &kp G                                              &kp H        &kp J  &kp K         &kp L            &kp BACKSPACE
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B                                              &lt 6 N      &kp M  &kp COMMA     &kp DOT          &mt RIGHT_SHIFT MINUS
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &mt LEFT_CONTROL TAB  &lt 2 SPACE  &lt 4 LANGUAGE_2    &lt 3 LANGUAGE_2  &lt 2 ENTER         &lt 7 DELETE  &kp RIGHT_SHIFT  &kp ESCAPE
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -152,18 +152,18 @@
 
         NUMBER {
             bindings = <
-&kp UNDERSCORE  &kp N7  &kp N8  &kp N9  &kp FSLH                     &kp F11  &kp F12  &trans  &trans  &trans
-&kp MINUS       &kp N4  &kp N5  &kp N6  &kp COLON                    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
-&kp N0          &kp N1  &kp N2  &kp N3  &kp DOT                      &kp F6   &kp F7   &kp F8  &kp F9  &kp F10
-&trans          &trans  &trans  &trans  &trans     &trans    &trans  &trans            &trans  &trans  &trans
+&kp F1   &kp F2   &kp F3  &kp F4  &kp F5                     &kp SLASH  &kp N7        &kp N8        &kp N9        &kp UNDERSCORE
+&kp F6   &kp F7   &kp F8  &kp F9  &kp F10                    &kp COLON  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp MINUS
+&kp F11  &kp F12  &trans  &trans  &trans                     &kp N0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD
+&trans   &trans   &trans  &trans  &trans   &trans    &trans  &trans                   &trans        &trans        &trans
             >;
         };
 
         SYMBOL {
             bindings = <
-&kp TILDE     &kp GRAVE      &kp PLUS     &kp EQUAL        &trans                          &trans                &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
-&kp DOLLAR    &kp HASH       &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION                    &kp NON_US_BACKSLASH  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT
-&kp ASTERISK  &kp AMPERSAND  &kp LCTRL    &kp PERCENT      &trans                          &kp PIPE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES
+&kp TILDE     &kp GRAVE      &kp PLUS     &kp EQUAL        &trans                          &kp PIPE              &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp LESS_THAN  &kp GREATER_THAN
+&kp DOLLAR    &kp HASH       &kp AT_SIGN  &kp EXCLAMATION  &kp QUESTION                    &kp SLASH             &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp SQT
+&kp ASTERISK  &kp AMPERSAND  &kp LCTRL    &kp PERCENT      &trans                          &kp NON_US_BACKSLASH  &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES
 &trans        &trans         &trans       &trans           &trans        &trans    &trans  &trans                                      &trans                 &trans         &trans
             >;
         };
