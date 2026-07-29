@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -151,7 +151,7 @@
 &kp CAPSLOCK            &trans                  &trans              &trans                   &kp LC(Z)                &kp LC(Y)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                   &trans          &trans           &kp LG(L)
             >;
 
-            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
+            sensor-bindings = <&re_kp LA(EQUAL) LA(MINUS)>;
         };
 
         NUMBER {
@@ -162,7 +162,7 @@
 &trans   &trans   &trans  &kp BACKSPACE  &kp SPACE  &kp ENTER    &trans  &trans                    &trans        &trans        &trans
             >;
 
-            sensor-bindings = <&re_kp LA(EQUAL) LA(MINUS)>;
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         SYMBOL {
