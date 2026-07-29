@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -145,10 +145,10 @@
 
         CONTROL {
             bindings = <
-&kp LC(LG(LEFT_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LS(LG(RIGHT_ARROW))  &kp LC(LG(RIGHT_ARROW))                                   &kp LS(LG(S))        &kp PAGE_UP      &kp UP_ARROW    &kp PAGE_DOWN    &kp HOME
-&kp LA(LC(TAB))         &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LG(TAB)                                               &kp LG(TAB)          &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp END
-&trans                  &kp LC(MINUS)           &kp LG(D)           &kp LC(EQUAL)            &kp LG(R)                                                 &kp DELETE           &kp LC(LS(TAB))  &trans          &kp LC(TAB)      &trans
-&kp CAPSLOCK            &trans                  &trans              &trans                   &kp LC(Z)                &kp LC(Y)    &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)                   &trans          &trans           &kp LG(L)
+&kp LC(LG(LEFT_ARROW))  &kp LS(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LS(LG(RIGHT_ARROW))  &kp LC(LG(RIGHT_ARROW))                           &kp LS(LG(S))  &kp PAGE_UP         &kp UP_ARROW         &kp PAGE_DOWN    &kp HOME
+&kp LA(LC(TAB))         &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &kp LG(TAB)                                       &kp LG(TAB)    &kp LEFT_ARROW      &kp DOWN_ARROW       &kp RIGHT_ARROW  &kp END
+&trans                  &kp LC(MINUS)           &kp LG(D)           &kp LC(EQUAL)            &kp LG(R)                                         &trans         &kp LA(LEFT_ARROW)  &kp LA(RIGHT_ARROW)  &kp LS(LC(TAB))  &kp LC(TAB)
+&kp CAPSLOCK            &trans                  &trans              &trans                   &kp LC(Z)                &kp LC(Y)    &kp DELETE  &trans                             &trans               &trans           &kp LG(L)
             >;
 
             sensor-bindings = <&re_kp LC(EQUAL) LC(MINUS)>;
