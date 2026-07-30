@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -161,8 +161,6 @@
 &kp N0          &kp N1  &kp N2  &kp N3  &kp PERIOD                           &kp F11    &kp F12  &trans  &trans  &trans
 &trans          &trans  &trans  &trans  &trans      &trans    &kp BACKSPACE  &kp SPACE           &trans  &trans  &kp ENTER
             >;
-
-            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         SYMBOL {
@@ -172,6 +170,8 @@
 &kp ASTERISK  &kp AMPERSAND  &kp CARET    &kp PERCENT      &trans                             &kp PIPE              &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp COLON      &kp DOUBLE_QUOTES
 &trans        &trans         &trans       &kp BACKSPACE    &kp SPACE     &kp ENTER    &trans  &trans                                      &trans                 &trans         &trans
             >;
+
+            sensor-bindings = <&mouse_scrl SCRL_RIGHT SCRL_LEFT>;
         };
 
         SCROLL {
